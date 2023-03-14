@@ -18,6 +18,11 @@ body {
   scrollbar-width: none;
 }
 
+img {
+    max-width: 100%; 
+    display: block;
+}
+
 header {
     height: 110px;
     display: flex;
@@ -142,4 +147,29 @@ header a:hover {
     background-color: #161616;
     color: white;
     border-radius: 10px;
+}
+
+
+/* Vans */
+
+.vans-container {
+    padding-inline: 1.5em;
+}
+
+.vans-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2em;
+    margin-top: 3.6em;
+}
+
+.van-tile {
+    grid-column: span 1;
+    width: 300px;
+    cursor: pointer;
+}
+
+.van-tile img {
+    border-radius: 5px;
 }
