@@ -173,3 +173,20 @@ header a:hover {
 .van-tile img {
     border-radius: 5px;
 }
+
+/* van details */
+
+.van-detail-container {
+    width: 100%;
+    padding-inline: 1.5em;
+}
+
+.van-detail-container .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.van-detail-tile {
+    max-width: 800px;
+}

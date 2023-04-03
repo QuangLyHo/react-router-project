@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Vans from "./pages/Vans"
+import Vans from "./vans/Vans"
+import VanDetail from "./vans/VanDetail"
 
 import './server'
 
@@ -20,6 +21,7 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/vans" element={<Vans />} />
+                <Route path="/vans/:id" element={<VanDetail />} />
             </Routes>
         </Router>
     )
